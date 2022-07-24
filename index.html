@@ -9,8 +9,18 @@
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("q89ZcCUF1ZCYFxvu6");
+      })();
+    </script>
     <title>Justin Variara</title>
   </head>
+
   <body>
     <section id="landing-page">
       <nav>
@@ -169,7 +179,36 @@
             </figure>
           </div>
         </div>
-        <div class="modal__half modal__contact">Let's get to talking!</div>
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__title--contact">
+            Let's get to talking!
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">
+            I would love to hear from you!
+          </h4>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input type="text" name="user_name" class="input"></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input type="email" name="user_email" class="input"></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea type="message" name="message" class="input"></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">Send it my way!</button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thank you for the message! Can't wait to speak to you.
+          </div>
+        </div>
+        <i class="fas fa-times modal__exit click"></i>
       </div>
     </section>
 
