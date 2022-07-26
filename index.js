@@ -3,6 +3,7 @@
 // q89ZcCUF1ZCYFxvu6
 let isModalOpen = false;
 let contrastToggle = false;
+let isMenuOpen = false;
 const scaleFactor = 1 / 20
 
 function moveBackground(event) {
@@ -59,4 +60,13 @@ function toggleModal() {
   }
   isModalOpen = true;
   document.body.classList += " modal--open";
+}
+
+function toggleMenu() {
+  if(isMenuOpen) {
+    isMenuOpen = false;
+    return document.body.classList.remove("menu--open");
+  }
+  isMenuOpen = true
+  document.body.classList += " menu--open";
 }
