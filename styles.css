@@ -559,7 +559,7 @@ nav {
 .btn__menu--close {
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 14px;
     padding: 8px;
     color: #fff;
 }
@@ -569,6 +569,7 @@ nav {
     text-align: center;
     font-size: 48px;
     margin-bottom: 60px;
+    color: var(--secondary-color);
 }
 
 .project__img {

@@ -25,7 +25,7 @@
     <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure>
-          <img id="personal-logo" src="./assets/JV_logo.svg" alt="" />
+          <a href="#" onclick="toggleModal()" ><img id="personal-logo" class="click" src="./assets/JV_logo.svg" alt="" /></a>
         </figure>
         <ul class="nav__link--list">
           <li class="nav__link" onclick="toggleModal()">
@@ -161,10 +161,10 @@
             <figure class="modal__language">
               <img
                 class="modal__language--img"
-                src="./assets/languages/python.png"
+                src="./assets/languages/react.png"
                 alt=""
               />
-              <span class="language__name">Python</span>
+              <span class="language__name">React</span>
             </figure>
             <figure class="modal__language">
               <img
@@ -193,10 +193,10 @@
             <figure class="modal__language">
               <img
                 class="modal__language--img"
-                src="./assets/languages/c++.png"
+                src="./assets/languages/python.png"
                 alt=""
               />
-              <span class="language__name">C++</span>
+              <span class="language__name">Python</span>
             </figure>
           </div>
         </div>
@@ -253,28 +253,24 @@
             <li class="project">
               <div class="project__wrapper">
                 <img
-                  src="./assets/projects/blinker mockup.png"
+                  src="./assets/projects/Twitter Clone.png"
                   class="project__img"
                   alt=""
                 />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description">
-                  <h3 class="project__description--title">Project #1</h3>
+                  <h3 class="project__description--title">Twitter Clone</h3>
                   <h4 class="project__description--sub-title">
-                    Html, CSS, JavaScript (whatever you used)
+                    React, Firebase, Material UI, CSS3
                   </h4>
                   <p class="project__description--para">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Iure odio fuga laborum dignissimos nesciunt, eveniet
-                    incidunt est voluptas sit placeat illo minus iste illum
-                    sunt, consequuntur necessitatibus architecto officiis
-                    numquam?
+                    Clone based off the app Twitter. Use Material UI for the icons and buttons. Applied Firebase for realtime Firestore database for storing the "tweets" as well as Google Authentication with Redux and Firebase for user login/sign-out and hosting. Styling with HTML5 and CSS3 BEM naming convention and best practices.
                   </p>
                   <div class="project__description--links">
-                    <a href="#" class="project__description--link">
+                    <a href="https://github.com/jvariara/twitter-clone" target="_blank" class="project__description--link">
                       <i class="fab fa-github"></i>
                     </a>
-                    <a href="#" class="project__description--link">
+                    <a href="https://twitter-clone-9ac5f.web.app/" target="_blank" class="project__description--link">
                       <i class="fas fa-link"></i>
                     </a>
                   </div>
@@ -284,28 +280,24 @@
             <li class="project">
               <div class="project__wrapper">
                 <img
-                  src="./assets/projects/blinker mockup.png"
+                  src="./assets/projects/Disney+ Clone.png"
                   class="project__img"
                   alt=""
                 />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description">
-                  <h3 class="project__description--title">Project #2</h3>
+                  <h3 class="project__description--title">Disney+ Clone</h3>
                   <h4 class="project__description--sub-title">
-                    Html, CSS, JavaScript (whatever you used)
+                    React, Redux, Firebase, Styled Components, HTML5 and CSS3
                   </h4>
                   <p class="project__description--para">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Iure odio fuga laborum dignissimos nesciunt, eveniet
-                    incidunt est voluptas sit placeat illo minus iste illum
-                    sunt, consequuntur necessitatibus architecto officiis
-                    numquam?
+                    Clone based off Disney+. Log in and Log out features powered by Redux. Google Authentication for logging in powered by Firebase and redirection by React. Use of Styled Components for designing each component. Has responsive design for smaller screens. Made with HTML5 and CSS3 BEM naming convention and best practices.
                   </p>
                   <div class="project__description--links">
-                    <a href="#" class="project__description--link">
+                    <a href="https://github.com/jvariara/Disney-Plus-Clone" target="_blank" class="project__description--link">
                       <i class="fab fa-github"></i>
                     </a>
-                    <a href="#" class="project__description--link">
+                    <a href="https://disneyplus-clone-87e55.web.app/" target="_blank" class="project__description--link">
                       <i class="fas fa-link"></i>
                     </a>
                   </div>
@@ -315,28 +307,24 @@
             <li class="project">
               <div class="project__wrapper">
                 <img
-                  src="./assets/projects/blinker mockup.png"
+                  src="./assets/projects/Google Clone.png"
                   class="project__img"
                   alt=""
                 />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description">
-                  <h3 class="project__description--title">Project #3</h3>
+                  <h3 class="project__description--title">Google Search Engine Clone</h3>
                   <h4 class="project__description--sub-title">
-                    Html, CSS, JavaScript (whatever you used)
+                    React, Firebase, Material UI, HTML5 and CSS3
                   </h4>
                   <p class="project__description--para">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Iure odio fuga laborum dignissimos nesciunt, eveniet
-                    incidunt est voluptas sit placeat illo minus iste illum
-                    sunt, consequuntur necessitatibus architecto officiis
-                    numquam?
+                    Clone based off the Google search engine. Uses React Router to go between the search/home page to the search results page instantly without refresh. Pulls live information from Google's custom search API. Use of a custom hook with React. Made with HTML5 and CSS3 BEM naming convention and best practices.
                   </p>
                   <div class="project__description--links">
-                    <a href="#" class="project__description--link">
+                    <a href="https://github.com/jvariara/Google-Clone" target="_blank" class="project__description--link">
                       <i class="fab fa-github"></i>
                     </a>
-                    <a href="#" class="project__description--link">
+                    <a href="https://clone-5e3a8.web.app/" target="_blank" class="project__description--link">
                       <i class="fas fa-link"></i>
                     </a>
                   </div>
@@ -362,12 +350,14 @@
           </a>
           <div class="footer__social--list">
             <a
-              href="#"
+              href="https://github.com/jvariara"
+              target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
               >Github</a
             >
             <a
-              href="#"
+              href="https://www.linkedin.com/in/justin-variara-a2183a22a/"
+              target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
               >LinkedIn</a
             >
