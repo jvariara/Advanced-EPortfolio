@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="index.js" defer></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
@@ -251,7 +252,7 @@
           </h1>
           <ul class="project__list">
             <li class="project">
-              <div class="project__wrapper">
+              <div class="project__wrapper" data-aos="fade-up">
                 <img
                   src="./assets/projects/Twitter Clone.png"
                   class="project__img"
@@ -278,7 +279,7 @@
               </div>
             </li>
             <li class="project">
-              <div class="project__wrapper">
+              <div class="project__wrapper" data-aos="fade-up">
                 <img
                   src="./assets/projects/Disney+ Clone.png"
                   class="project__img"
@@ -305,7 +306,7 @@
               </div>
             </li>
             <li class="project">
-              <div class="project__wrapper">
+              <div class="project__wrapper" data-aos="fade-up">
                 <img
                   src="./assets/projects/Google Clone.png"
                   class="project__img"
@@ -379,5 +380,12 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 500,
+        duration: 1500
+      });
+    </script>
   </body>
 </html>
