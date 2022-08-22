@@ -3,6 +3,7 @@
 :root {
     --primary-color: #990000;
     --secondary-color: #242424;
+    --typewriterSpeed: 1.5s;
 }
 
 * {
@@ -105,6 +106,47 @@ label {
     color: var(--primary-color) !important;
 }
 
+.typewriter {
+    position: relative;
+    /* font-family: 'Poppins', sans-serif; */
+    /* width: max-content; */
+}
+
+.typewriter::before,
+.typewriter::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.typewriter::before {
+    background: rgb(245, 245, 245);
+    animation: typewriter var(--typewriterSpeed) steps(10) 1s forwards;
+}
+
+.typewriter::after {
+    width: .125em;
+    background: var(--primary-color);
+    animation: 
+        typewriter var(--typewriterSpeed) steps(10) 1s forwards,
+        blink 600ms steps(10) infinite;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
 .link__hover-effect {
     position: relative;
 }
@@ -166,6 +208,10 @@ nav,
 .dark-theme .btn__menu
 {
     color: #fff;
+}
+
+.dark-theme .typewriter::before {
+    background: var(--secondary-color);
 }
 
 .dark-theme .text__primary--color {
